@@ -13,7 +13,12 @@ public class Commerçants extends Humain {
 		return argent_perdu;
 	}
 	public  void recevoir(int argent) {
+		if (argent>0) {
 		parler(argent+" sous ! Je te remercie généreux donateur!");
 		this.gagnerArgent(argent);
+		}else{
+			argent=0;
+			parler(argent+" sous ! Me prend tu pour un idiot! Donne moi de l'argent Ronin!");
+		}
 	}
 }
