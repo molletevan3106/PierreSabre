@@ -4,7 +4,7 @@ public class Commerçants extends Humain {
 
 	public Commerçants(String nom, int quantite_argent) {
 		super(nom, "thé", quantite_argent);
-		// TODO Auto-generated constructor stub
+		
 	}
 	public int seFaireExtorquer() {
 		parler("J’ai tout perdu! Le monde est trop injuste..");

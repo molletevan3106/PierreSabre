@@ -14,5 +14,22 @@ public class Ronin extends Humain {
 	beneficiaire.recevoir(don_argent);
 	this.perdreArgent(don_argent);
 	}
+	public void provoquer(Yakuza adversaire) {
+		int force=2*this.honneur;
+		int reputation=adversaire.getReputation();
+		parler("Je t'ai retrouvé vermine, tu vas payer pour ce que tu as fait à ce pauvre marchand!");
+		if (force>=reputation) {
+			parler("Je t’ai eu petit yakusa!");
+			int argent_yakusa=adversaire.perdre();
+			this.gagnerArgent(argent_yakusa);
+			this.honneur+=1;;
+		} else {
+			this.honneur-=1;;
+			parler("J'ai perdu contre ce yakuza, mon honneur et ma bourse ont en pris un coup");
+			int argent_perdue=this.getQuantite_argent();
+			this.perdreArgent(argent_perdue);
+			adversaire.gagner(argent_perdue);
+		}
+	}
 
 }
