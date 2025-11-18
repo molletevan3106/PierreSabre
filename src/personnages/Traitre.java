@@ -20,7 +20,7 @@ public class Traitre extends Samourai {
 			commercants.perdreArgent(argentRanconner);
 			niveauTraitrise+=1;
 			this.gagnerArgent(argentRanconner);
-			parler("Si tu veux ma protection contre les Yakuzas, il va falloir payer ! Donne-moi " +argentRanconner+" sous ou gare � toi !");
+			parler("Si tu veux ma protection contre les Yakuzas, il va falloir payer ! Donne-moi " +argentRanconner+" sous ou gare à toi !");
 			commercants.parler("Tout de suite grand "+this.getNom()+".");
 		} else {
 			parler("Mince je ne peux plus rançonner personne sinon un samourai risque de me demasquer!");

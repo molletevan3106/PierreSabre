@@ -9,10 +9,10 @@ public class Ronin extends Humain {
 	}
 	
 	public void donner(Commerçants beneficiaire) {
-	int don_argent=this.getQuantite_argent()*10/100;
-	parler(beneficiaire.getNom()+" prends ces "+don_argent+" sous.");
-	beneficiaire.recevoir(don_argent);
-	this.perdreArgent(don_argent);
+	int donargent=this.getQuantite_argent()*10/100;
+	parler(beneficiaire.getNom()+" prends ces "+donargent+" sous.");
+	beneficiaire.recevoir(donargent);
+	this.perdreArgent(donargent);
 	}
 	public void provoquer(Yakuza adversaire) {
 		int force=2*this.honneur;
