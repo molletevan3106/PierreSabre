@@ -1,6 +1,6 @@
 package histoire;
 
-import personnages.Commerçants;
+import personnages.CommerÃ§ants;
 import personnages.Humain;
 import personnages.Ronin;
 import personnages.Yakuza;
@@ -8,9 +8,9 @@ import personnages.Yakuza;
 public class HistoireTP4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Humain prof=new Humain("Prof","kombucha",54);
-		Commerçants marco=new Commerçants("Marco",20);
+		CommerÃ§ants marco=new CommerÃ§ants("Marco",20);
 		Yakuza yaku= new Yakuza("Yaku le noir","whisky", 30,"Warsong");
 		Ronin roro=new Ronin("Roro","shochu",60);
 		prof.direBonjour();

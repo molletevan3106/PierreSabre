@@ -8,7 +8,7 @@ public class Ronin extends Humain {
 		
 	}
 	
-	public void donner(Commerçants beneficiaire) {
+	public void donner(CommerÃ§ants beneficiaire) {
 	int don_argent=this.getQuantite_argent()*10/100;
 	parler(beneficiaire.getNom()+" prends ces "+don_argent+" sous.");
 	beneficiaire.recevoir(don_argent);
@@ -17,9 +17,9 @@ public class Ronin extends Humain {
 	public void provoquer(Yakuza adversaire) {
 		int force=2*this.honneur;
 		int reputation=adversaire.getReputation();
-		parler("Je t'ai retrouvé vermine, tu vas payer pour ce que tu as fait à ce pauvre marchand!");
+		parler("Je t'ai retrouvï¿½ vermine, tu vas payer pour ce que tu as fait ï¿½ ce pauvre marchand!");
 		if (force>=reputation) {
-			parler("Je t’ai eu petit yakusa!");
+			parler("Je tï¿½ai eu petit yakusa!");
 			int argent_yakusa=adversaire.perdre();
 			this.gagnerArgent(argent_yakusa);
 			this.honneur+=1;;

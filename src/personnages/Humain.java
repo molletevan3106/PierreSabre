@@ -35,10 +35,10 @@ public class Humain {
 	
 	public void acheter(String bien,int prix) {
 		if (quantite_argent>=prix) {
-			parler("J'ai "+quantite_argent+" sous en poche. Je vais pouvoir m'offrir "+bien+" a  "+prix+" sous.");
+			parler("J'ai "+quantite_argent+" sous en poche. Je vais pouvoir m'offrir "+bien+" aï¿½ "+prix+" sous.");
 			perdreArgent(prix);
 		} else {
-			parler("Je n'ai plus que "+quantite_argent+" sous en poche. Je ne peux meme pas m'offrir "+bien+" a  "+prix+" sous.");
+			parler("Je n'ai plus que "+quantite_argent+" sous en poche. Je ne peux meme pas m'offrir "+bien+" Ã  "+prix+" sous.");
 		}
 	}
 	
